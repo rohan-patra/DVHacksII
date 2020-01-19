@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Diabetus</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/icons8-caduceus.png" alt="" /></span>
+							<h1>Patient Stats</h1>
+							<p>Enter Patient Information Below</p>
+							<form method="post" action="respnse.php">
+							<div class="fields">
+								<div class="field">
+									<select name="age" id="age">
+										<option value="">Age Range</option>
+										<option value="[0-10)">0-10</option>
+										<option value="[10-20)">10-20</option>
+										<option value="[20-30)">20-30</option>
+										<option value="[30-40)">30-40</option>
+										<option value="[40-50)">40-50</option>
+										<option value="[50-60)">50-60</option>
+										<option value="[60-70)">60-70</option>
+										<option value="[70-80)">70-80</option>
+										<option value="[80-90)">80-90</option>
+										<option value="[90-100)">90-100</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="race" id="race">
+										<option value="">Ethnicity</option>
+										<option value="?">Rather Not Say</option>
+										<option value="African-American">African American</option>
+										<option value="Asian">Asian/ Pacific Islander</option>
+										<option value="Caucasian">Caucasian</option>
+										<option value="Hispanic">Hispanic</option>
+										<option value="Other">Other</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="gender" id="gender">
+										<option value="">Gender</option>
+										<option value="Female">Female</option>
+										<option value="Male">Male</option>
+										<option value="Unknown/Invalid">Other</option>
+									</select>
+								</div>
+								<div class="field">
+									<label>Days in Hospital on Last Visit</label>
+									<input type="number" name="time_in_hospital" id="time_in_hospital" class="fa-500px"/>
+								</div>
+								<div class="field">
+									<label>Number of Previous Lab Tests</label>
+									<input type="number" name="num_lab_procedures" id="num_lab_procedures" class="fa-500px"/>
+								</div>
+								<div class="field">
+									<label>Number of Previous Surgeries</label>
+									<input type="number" name="num_procedures" id="num_procedures" class="fa-500px"/>
+								</div>
+								<div class="field">
+									<label>Number of Medications</label>
+									<input type="number" name="num_medications" id="num_medications" class="fa-500px"/>
+								</div>
+								<div class="field">
+									<label>Number of Diagnoses</label>
+									<input type="number" name="number_diagnoses" id="number_diagnoses" class="fa-500px"/>
+								</div>
+								<div class="field">
+									<select name="metformin" id="metformin">
+										<option value="">Metaformin</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="repaglinide" id="repaglinide">
+										<option value="">Repaglinide</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="nateglinide" id="nateglinide">
+										<option value="">Nateglinide</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="chlorpropamide" id="chlorpropamide">
+										<option value="">Chlorpropamide</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="glimepiride" id="glimepiride">
+										<option value="">Glimepiride</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="glipizide" id="glipizide">
+										<option value="">Glipizide</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="glyburide" id="glyburide">
+										<option value="">Glyburide</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="pioglitazone" id="pioglitazone">
+										<option value="">Pioglitazone</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="rosiglitazone" id="rosiglitazone">
+										<option value="">Rosiglitazone</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="acarbose" id="acarbose">
+										<option value="">Acarbose</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="miglitol" id="miglitol">
+										<option value="">Miglitol</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="insulin" id="insulin">
+										<option value="">Insulin</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="glyburide-metformin" id="glyburide-metformin">
+										<option value="">Glyburide-Metformin</option>
+										<option value="Down">Down</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="acetohexamide" id="acetohexamide">
+										<option value="">Acetohexamide</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="tolbutamide" id="tolbutamide">
+										<option value="">Tolbutamide</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="troglitazone" id="troglitazone">
+										<option value="">Troglitazone</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="glipizide-metformin" id="glipizide-metformin">
+										<option value="">Glipizide-metformin</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="glimepiride-pioglitazone" id="glimepiride-pioglitazone">
+										<option value="">Glimepiride-Pioglitazone</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="metformin-rosiglitazone" id="metformin-rosiglitazone">
+										<option value="">Metformin-Rosiglitazone</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="metformin-pioglitazone" id="ametformin-pioglitazone">
+										<option value="">Metformin-Pioglitazone</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="tolazamide" id="tolazamide">
+										<option value="">Tolazamide</option>
+										<option value="No">No</option>
+										<option value="Steady">Steady</option>
+										<option value="Up">Up</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="examide" id="examide">
+										<option value="">Examide</option>
+										<option value="No">No</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="sitagliptin" id="sitagliptin">
+										<option value="">Sitagliptin</option>
+										<option value="No">No</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="Change" id="Change">
+										<option value="">Any Changes</option>
+										<option value="No">No</option>
+										<option value="Ch">Yes</option>
+									</select>
+								</div>
+								<div class="field">
+									<select name="diabetesMed" id="diabetesMed">
+										<option value="">Any Diabetes Meds</option>
+										<option value="No">No</option>
+										<option value="Yes">Yes</option>
+									</select>
+								</div>
+								<div class="field">
+									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+								</div>
+							</div>
+							<ul class="actions special">
+								<li><input class="button" type="submit"/></li>
+							</ul>
+						</form>
+						</header>
+						<!--
+						<hr />
+						<h2>Extra Stuff!</h2>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="field">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="field">
+									<select name="department" id="department">
+										<option value="">Department</option>
+										<option value="sales">Sales</option>
+										<option value="tech">Tech Support</option>
+										<option value="null">/dev/null</option>
+									</select>
+								</div>
+								<div class="field">
+									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+								</div>
+								<div class="field">
+									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+								</div>
+								<div class="field">
+									<label>But are you a robot?</label>
+									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+								</div>
+							</div>
+							<ul class="actions special">
+								<li><a href="#" class="button">Get Started</a></li>
+							</ul>
+						</form>
+						<hr />
+						-->
+						<!--
+						<footer>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter">Twitter</a></li>
+								<li><a href="#" class="icon brands fa-instagram">Instagram</a></li>
+								<li><a href="#" class="icon brands fa-facebook-f">Facebook</a></li>
+							</ul>
+						</footer>
+						-->
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Diabetes</li>
+							<li>Credits: <a href="http://rohanpatra.com">Rohan Patra, Ishaan Bansal, Samarth Shah, Divyansh Rajesh Jain</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>
